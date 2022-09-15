@@ -8,5 +8,4 @@ db.produtos.updateMany(
   );
 
 db.produtos.find({}, 
-  { nome: 1, _id: false, tags: 1 },
-  );
+  { nome: 1, _id: false, tags: 1 });
