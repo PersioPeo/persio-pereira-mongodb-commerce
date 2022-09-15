@@ -1,12 +1,14 @@
 db.produtos.updateMany(
-{ nome: { $in: ["Big Mac", "Quarterão com Queijo",
+{ nome: { $in: ["Big Mac", "Quarteirão com Queijo",
 ] } },
-{ $push: { ingredientes: "bancon" } },
+{ $push: { ingredientes: "bacon" } },
 );
 
-db.produtos.find({}, 
+db.produtos.find(
+  {}, 
   {
     nome: 1,
     _id: 0,
     ingredientes: 1,
-  });
+  },
+);
